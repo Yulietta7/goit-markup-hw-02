@@ -1,6 +1,9 @@
-.page {
+body {
 background-color: #F5F5F5;
 color: #212121;
+
+font-family: Roboto, sans-serif;
+letter-spacing: 0.03em;
 }
 
 ul {
@@ -24,6 +27,24 @@ ul {
 /* фон героя і футера 
 #2F303A */
 
+/* Лого */
 .logo {
-   color:
+font-family: Raleway, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+color: #000000;
+
+text-decoration: none;
 }
+
+.logo-accent {
+    color: #2196F3;
+}
+
+/* Герой */
+.hero-title {
+
+}
+
+/* Футер */
