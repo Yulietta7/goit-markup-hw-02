@@ -1,14 +1,3 @@
-body {
-background-color: #F5F5F5;
-color: #212121;
-
-font-family: Roboto, sans-serif;
-letter-spacing: 0.03em;
-}
-
-ul {
-    list-style: none;
-}
 /* колір основного тексту 
 #212121 */ 
 
@@ -27,24 +16,127 @@ ul {
 /* фон героя і футера 
 #2F303A */
 
-/* Лого */
-.logo {
-font-family: Raleway, sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-color: #000000;
+body {
+    background-color: #F5F5F5;
+    color: #212121;
+    
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    }
 
-text-decoration: none;
+.list {
+    list-style: none;
 }
 
-.logo-accent {
+.link {
+    text-decoration: none;
+}
+
+
+/* Хедер */
+
+/* Лого-хедер */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+    
+    text-decoration: none;
+    }
+    
+    .logo-accent {
+        color: #2196F3;
+    }
+
+/* Навігація */
+.nav-list-link {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
     color: #2196F3;
 }
 
-/* Герой */
-.hero-title {
-
+/* Контакти-хедер */
+.link-mail,
+.link-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
+
+.link-mail:hover,
+.link-mail:focus {
+    color: #2196F3;
+}
+
+.link-tel:hover,
+.link-tel:focus {
+    color: #2196F3;
+}
+
+/* Мейн контент */
+
+/* Герой */
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.modal-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #188CE8;
+}
+
+/* Переваги */
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.advantages-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Чим ми займаємося */
+
 
 /* Футер */
