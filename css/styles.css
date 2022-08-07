@@ -1,26 +1,21 @@
-/* колір основного тексту 
-#212121 */ 
-
-/* колір вторинного тексту #757575 */
-
-/* білий #FFFFFF */
-
 /* білий вторинний rgba(255, 255, 255, 0.6) */
 
-/* акцент #2196F3 */
-
-/* колір фону #F5F5F5 */
-
-/* вторинний колір фону #F5F4FA */
-
-/* фон героя і футера 
-#2F303A */
+:root {
+    --primary-font-family: Roboto, sans-serif;
+    --secondary-font-family: Raleway, sans-serif;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-font-color: #FFFFFF;
+    --background-primary-white-color: #F5F5F5;
+    --background-secondary-grey-color: #F5F4FA;
+    --background-dark-color: #2F303A;
+    --accent-color: #2196F3;
+}
 
 body {
-    background-color: #F5F5F5;
-    color: #212121;
-    
-    font-family: Roboto, sans-serif;
+    background-color: var(--background-primary-white-color);
+    color: var(--main-text-color);
+    font-family: var(--primary-font-family);
     letter-spacing: 0.03em;
     }
 
@@ -32,37 +27,45 @@ body {
     text-decoration: none;
 }
 
+/* =====Компоненти-початок===== */
 
-/* Хедер */
+.subtitle {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* =====Компоненти-кінець */
+
+/* ======Хедер-початок===== */
 
 /* Лого-хедер */
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     color: #000000;
     
     text-decoration: none;
     }
     
     .logo-accent {
-        color: #2196F3;
+        color: var(--accent-color);
     }
 
 /* Навігація */
 .nav-list-link {
-    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Контакти-хедер */
@@ -72,34 +75,40 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 .link-mail:hover,
 .link-mail:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .link-tel:hover,
 .link-tel:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-/* Мейн контент */
+.header {
+    background-color: var(--white-font-color);
+}
+
+/* =====Хедер-кінець===== */
+
+/* =====Мейн контент-початок===== */
 
 /* Герой */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.76;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF
+    color: var(--white-font-color);
 }
 
 .modal-btn {
@@ -109,8 +118,8 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white-font-color);
+    background-color: var(--accent-color);
 }
 
 .modal-btn:hover,
@@ -120,23 +129,82 @@ body {
 
 /* Переваги */
 .advantages-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
 }
 
 .advantages-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /* Чим ми займаємося */
 
+/* Наша команда */
+.team-subject {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
 
-/* Футер */
+.team-position {  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #757575;
+}
+
+.team {
+    background-color: var(--background-secondary-grey-color);
+}
+
+/* =====Мейн контент-кінець===== */
+
+/* =====Футер-початок===== */
+
+.footer {
+    background-color: var(--background-dark-color);
+}
+
+/* Лого-футер */
+.logo-footer {
+    color: var(--white-font-color);
+    }
+
+/* Контакти-футер */
+.footer-link-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
+}
+
+.footer-link-address:hover,
+.footer-link-address:focus {
+    color: var(--accent-color);
+}
+
+.footer-link-mail,
+.footer-link-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-mail:hover,
+.footer-link-mail:focus {
+    color: var(--accent-color);
+}
+
+.footer-link-tel:hover,
+.footer-link-tel:focus {
+    color: var(--accent-color);
+}
+
+/* =====Футер-кінець===== */
+
+
