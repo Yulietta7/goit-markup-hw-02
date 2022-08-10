@@ -10,12 +10,15 @@
     --background-secondary-grey-color: #F5F4FA;
     --background-dark-color: #2F303A;
     --accent-color: #2196F3;
+    --logo-color: #000000;
+    --modal-btn-color: #188CE8;
 }
 
 body {
-    background-color: var(--background-primary-white-color);
+    background-color: var(--white-font-color:);
     color: var(--main-text-color);
     font-family: var(--primary-font-family);
+    font-size: 14px;
     letter-spacing: 0.03em;
     }
 
@@ -45,7 +48,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #000000;
+    color: var(--logo-color);
     
     text-decoration: none;
     }
@@ -57,7 +60,6 @@ body {
 /* Навігація */
 .nav-list-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
@@ -76,7 +78,6 @@ body {
 .link-mail,
 .link-tel {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
@@ -128,19 +129,16 @@ body {
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: #188CE8;
+    background-color: var(--modal-btn-color);
 }
 
 /* Переваги */
 .advantages-title {
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .advantages-text {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
@@ -213,8 +211,8 @@ body {
 
 /* Контакти-футер */
 .footer-link-address {
+    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF;
 }
@@ -226,8 +224,8 @@ body {
 
 .footer-link-mail,
 .footer-link-tel {
+    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
